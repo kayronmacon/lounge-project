@@ -1,0 +1,750 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: visible;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 12vh;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    color: rgb(206, 204, 204);
+    text-transform: uppercase ;
+    letter-spacing: 5px;
+    font-size: 32px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 55%;
+
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a {
+    color: rgb(206, 204, 204);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px ;
+    height: 3px ;
+    background-color: rgb(206, 204, 204);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+body {
+    overflow-x: hidden;
+    background: url("/img/weed-background.tabletSize.jpg") no-repeat center;
+     background-color: black;
+     background-size: cover;
+     background-attachment: fixed;
+     height: 500px;
+    
+}
+
+.container1{
+    color: rgb(206, 204, 204);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 8% ;
+    text-transform: uppercase ;
+    letter-spacing: 9px;
+    font-size: 28px;
+   flex-wrap: nowrap;
+   flex-direction: row;
+   margin-bottom: 2%;
+   
+
+    
+}
+h6{
+    letter-spacing: 7px;
+    margin-top: -5% ;
+}
+i{
+    font-size: 300%;
+   
+}
+a :hover{
+    margin: 0px 5% 0px 5%;
+
+    color: red;
+    margin-top: 2%;
+   
+     
+}
+li a{
+    margin: 0px 5% 0px 5%;
+    width: 120%;
+    height: 100%;
+    display: flex;
+}
+
+a{
+    margin: 0px 5% 0px 5%;
+    width: 120%;
+    height: 100%;
+   
+}
+
+.loungePic{
+    width: 50%;
+    height: auto;
+    margin: 0px 0px 0px 0%;
+    border: 2px solid rgbo(34, 99, 1);
+    border-radius: 12px;
+}
+.infoRow{
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   margin-right: 1.5% ;
+   background-image: url(/img/blackbackground.jpg);
+   border: 2px solid rgb(34, 99, 1);
+   border-radius: 12px;
+}
+.infoRow p{
+    font-size: 12px;
+    letter-spacing: 0px;
+    margin: 7% 0px 3% 0px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.iconsSocial{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+/* 2nd section content y footer*/
+.container2{
+    display: flex;
+    height: 800px;
+}
+.content{
+    flex: 1;
+    
+}
+.side-bar {
+    
+    border: 1px solid white;
+    flex: 0 1 30%;
+    
+}
+.container2 {
+    margin: 3% 5% 2% 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.content{
+    background-image: url(/img/blackbackground.jpg); 
+    border: solid 1px whitesmoke;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.side-bar {
+    background-image: url(/img/blackbackground.jpg);
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5% 0% 2% 0% ;
+}
+.bongPic {
+    width: 200px;
+    height: 170px;
+    grid-column: 1/2;
+    grid-row: 1;
+    justify-content: center;
+    margin-top: 25%;
+    display: grid;
+}
+.bongText {
+    font-size: 30px;
+    color: whitesmoke;
+    grid-column: 2/6;
+    grid-row: 1;
+    justify-content: center;
+    margin-top: 9%;
+    display: grid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.jointPic {
+    width: 190px;
+    height: 170px;
+    grid-column: 1/2;
+    grid-row: 3;
+    justify-content: end;
+    display: grid;
+    margin-left: 10%;
+}
+.jointText {
+    font-size: 30px;
+    color: whitesmoke;
+    grid-column: 2/6;
+    grid-row: 3;
+    justify-content: center;
+    display: grid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: -2%;;
+}
+
+
+.weedPic {
+    width: 190px;
+    height: 170px;
+    grid-column: 1/2;
+    grid-row: 4;
+    justify-content: end;
+    display: grid;
+    align-items: center;
+    margin-top: 35%;
+    margin-left: 10%;
+}
+.weedText {
+    font-size: 30px;
+    color: whitesmoke;
+    grid-column: 2/6;
+    grid-row: 4;
+    justify-content: center;
+    display: grid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 7%;
+}
+.footer {
+    background-color: rgb(2, 70, 2);
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 300%;
+    color: white;
+    text-shadow: 2px 1px 5px rgb(12, 12, 12);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-top: 1px solid black;
+
+}
+.footer h1 {
+    justify-content: center;
+    display: flex;
+}
+
+
+@media screen and (min-width: 1300px){
+    .infoRow p{
+        font-size: 17px;
+        width: 90%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1068px){
+    .nav-links{
+        width: 60%;
+    }
+    body {
+        background-image: url("/img/weed-background-wallpaper-7.jpg");
+        background-repeat: repeat
+    }
+    
+.container1{
+    color: rgb(206, 204, 204);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 10% ;
+    text-transform: uppercase ;
+    letter-spacing: 5px;
+    font-size: 24px;
+}
+.nav-links a {
+    color: rgb(206, 204, 204);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.logo {
+    color: rgb(206, 204, 204);
+    text-transform: uppercase ;
+    letter-spacing: 5px;
+    font-size: 24px;
+}
+h6{
+    letter-spacing: 7px;
+    font-size: 12px;
+}
+
+/* Second Section */
+
+.container2{
+    display: flex;
+    height: 800px;
+}
+.content{
+    flex: 1;
+    
+}
+.side-bar {
+    
+    border: 1px solid white;
+    flex: 0 1 30%;
+    
+}
+.container2 {
+    margin: 5% 5% 4% 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.content{
+    background-image: url(/img/blackbackground.jpg); 
+    border: solid 1px whitesmoke;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.side-bar {
+    background-image: url(/img/blackbackground.jpg);
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5% 0% 2% 0% ;
+}
+.bongPic {
+    width: 200px;
+    height: 170px;
+    grid-column: 1/2;
+    grid-row: 1;
+    justify-content: center;
+    margin-top: 25%;
+    display: grid;
+}
+.bongText {
+    font-size: 27px;
+    color: whitesmoke;
+    grid-column: 2/6;
+    grid-row: 1;
+    justify-content: center;
+    margin-top: 9%;
+    display: grid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.jointPic {
+    width: 190px;
+    height: 170px;
+    grid-column: 1/2;
+    grid-row: 3;
+    justify-content: end;
+    display: grid;
+    margin-left: 10%;
+}
+.jointText {
+    font-size: 27px;
+    color: whitesmoke;
+    grid-column: 2/6;
+    grid-row: 3;
+    justify-content: center;
+    display: grid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: -2%;;
+}
+
+
+.weedPic {
+    width: 190px;
+    height: 170px;
+    grid-column: 1/2;
+    grid-row: 4;
+    justify-content: end;
+    display: grid;
+    align-items: center;
+    margin-top: 35%;
+    margin-left: 10%;
+}
+.weedText {
+    font-size: 27px;
+    color: whitesmoke;
+    grid-column: 2/6;
+    grid-row: 4;
+    justify-content: center;
+    display: grid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 7%;
+}
+.footer {
+    background-color: rgb(2, 70, 2);
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 300%;
+    color: white;
+    text-shadow: 2px 1px 5px rgb(12, 12, 12);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-top: 1px solid black;
+
+}
+.footer h1 {
+    justify-content: center;
+    display: flex;
+}
+@media screen and (max-width: 900px){
+    .bongText{
+        font-size: 25.5px;
+
+    }
+    .weedText{
+        font-size: 25.5px;
+    }
+    .jointText{
+        font-size: 25.5px;
+    }
+}
+@media screen and (max-width: 858px){
+    .container1{
+        color: rgb(206, 204, 204);
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content: center;
+        margin-top: 10% ;
+        text-transform: uppercase ;
+        letter-spacing: 5px;
+        font-size: 20px;
+    }
+    h6{
+        letter-spacing: 7px;
+        font-size: 10px;
+    }
+    .container2 {
+        margin: 8% 5% 4% 5%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .weedText {
+        font-size: 23px;
+       
+}
+    .jointText {
+        font-size: 23px;
+        
+}
+    .bongText {
+        font-size: 23px;
+}
+
+@media screen and (max-width: 768px){
+    
+    
+    body{
+        overflow-x: hidden;
+        background: url("/img/weed-background.tabletSize.jpg") no-repeat center;
+        background-color: black;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 500px;
+        
+
+    } 
+  
+
+    .logo {
+        color: rgb(206, 204, 204);
+        text-transform: uppercase ;
+        letter-spacing: 4px;
+        font-size: 27px;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    .burger{
+        display: block; 
+    }
+
+.nav-active{
+    transform: translateX(0%);
+}
+.container1{
+    color: rgb(206, 204, 204);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1% ;
+    text-transform: uppercase ;
+    letter-spacing: 7px;
+    font-size: 22px;
+    
+    
+   
+    
+}
+
+.infoRow{
+    color: rgb(206, 204, 204);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13% ;
+    text-transform: uppercase ;
+    letter-spacing: 7px;
+    font-size: 22px;
+    width: 90%;
+   
+    
+}
+.iconsSocial{
+    display: flex;
+    justify-content: stretch;
+    width: 60%;
+}
+a{
+    margin: 0px 5% 0px 5%;
+    width: 120%;
+    height: 100%;
+}
+ a :hover{
+    margin: 0px 5% 0px 5%;
+    width: 150%;
+    height: 220%;
+    color: red;
+    margin-top: 10%;
+    margin-bottom: -10%;
+     
+}
+
+.loungePic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.infoRow p{
+    font-size: 11px;
+    letter-spacing: 0px;
+    margin: 7% 0% 3% 0%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ h6{
+    letter-spacing: 7px;
+    margin-top: 0.5% ;
+}
+
+
+
+/* Icon Edit Start */
+.iconsfa{
+    font-size: 68px;
+    margin-top: 5%;
+    letter-spacing: 29px;
+    
+}
+
+.iconsNote {
+    display: flex;
+    color: rgb(206, 204, 204);
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase ;
+    letter-spacing: 10px;
+    font-size: 20px;
+    margin-left: -2%;
+}
+/* Loud Lounge Picture */
+.loungePic {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 8% 0px 4% -1%;
+}
+
+/*second section content y footer*/
+.container2 {
+    margin: 3% 5% 2% 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.content{
+    background-image: url(/img/blackbackground.jpg); 
+    border: solid 1px whitesmoke;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.side-bar {
+    background-image: url(/img/blackbackground.jpg);
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5% 0% 2% 0% ;
+}
+.bongPic {
+    width: 110px;
+    height: 170px;
+    grid-column: 1/2;
+    grid-row: 1;
+    justify-content: center;
+    margin-top: 25%;
+    display: grid;
+}
+.bongText {
+    font-size: 20px;
+    color: whitesmoke;
+    grid-column: 2/6;
+    grid-row: 1;
+    justify-content: center;
+    margin-top: 9%;
+    display: grid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.jointPic {
+    width: 110px;
+    height: 170px;
+    grid-column: 1/2;
+    grid-row: 3;
+    justify-content: end;
+    display: grid;
+    margin-left: 10%;
+}
+.jointText {
+    font-size: 20px;
+    color: whitesmoke;
+    grid-column: 2/6;
+    grid-row: 3;
+    justify-content: center;
+    display: grid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: -2%;;
+}
+
+.weedPic {
+    width: 110px;
+    height: 170px;
+    grid-column: 1/2;
+    grid-row: 4;
+    justify-content: end;
+    display: grid;
+    align-items: center;
+    margin-top: 35%;
+    margin-left: 10%;
+}
+.weedText {
+    font-size: 20px;
+    color: whitesmoke;
+    grid-column: 2/6;
+    grid-row: 4;
+    justify-content: center;
+    display: grid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 10%;
+}
+.footer {
+    background-color: rgb(2, 70, 2);
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 300%;
+    color: white;
+    text-shadow: 2px 1px 5px rgb(12, 12, 12);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-top: 1px solid black;
+
+}
+.footer h1 {
+    justify-content: center;
+    display: flex;
+}
+
+}
+
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    top{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+   opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+
+}}
+
+/* other sections */
+
